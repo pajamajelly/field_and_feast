@@ -1,1 +1,171 @@
+/* CSS By PJ Graham */
+
+/* Import font link */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Root colors, fonts and styles */
+
+:root {
+    /* colors */
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+    /* fonts */ 
+    --playfair: 'Playfair Display', serif;
+}
+
+/* Global Styles (mobile first/small) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mobile {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: var(--linen);
+    font-family: var(--playfair);
+}
+
+/* Header: h1 & Navbar */
+header {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+}
+
+header > img {
+    width: 200px;
+    margin: 0 75px 0 125px;
+    padding: 20px;
+}
+
+header > h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header > p {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+}
+
+header > nav {
+    background-color: var(--champagne-gold);
+    color: var(--dark-charcoal);
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-charcoal);
+}
+
+nav a:hover {
+    background-color: var(--soft-white);
+    font-weight: lighter;
+    transition-duration: 1s;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Section 1: Intro (h2, p) */
+h2 {
+    font-size: 25px;
+    padding-top: 25px;
+    color: var(--midnight-blue);
+}
+
+p {
+    color: var(--midnight-blue);
+    padding-top: 10px;
+}
+
+hr {
+    margin-top: 25px;
+    border: 1px solid var(--champagne-gold);
+}
+
+
+/* Section 2: Grid layout for three boxes with text aligned left (h2 above grid: h3, p) */
+
+
+/* Section 3: Card section with responsive img and captionn test */
+
+/* Footer */
+
+/* Media Queries */
+/* Media query - Medium */
+/* Media query - Large */
+/* Media query - XL */
 
