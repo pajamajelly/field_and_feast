@@ -154,8 +154,10 @@ h2 {
 }
 
 p {
+    font-size: 14px;
     color: var(--midnight-blue);
-    padding-top: 10px;
+    font-weight: lighter;
+    line-height: 1.25rem;
 }
 
 hr {
@@ -198,14 +200,18 @@ ul {
 
 /* Section 3: Card section with responsive img and captionn test */
 #gallery {
+    padding-bottom: 10px;
+}
+
+#gallery-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill), minmax(200px, 1fr);
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 
 .card {
-    border-radius: 5px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -213,6 +219,12 @@ ul {
 .card > img {
     max-width: 400px;
 }
+
+caption {
+    border: 1px solid var(--dark-charcoal);
+    font-style: italic;
+}
+
 /* Footer */
 
 
