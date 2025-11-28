@@ -116,6 +116,7 @@ header > nav {
 nav ul {
     display: flex;
     padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -164,13 +165,15 @@ hr {
 
 /* Section 2: Grid layout for three boxes with text aligned left (h2 above grid: h3, p) */
 #offerings {
-    display: grid;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 5px;
     color: var(--soft-white);
+    line-height: 20px;
 }
 
-#grid-item-1, #grid-item-2, #grid-item-3 {
+#grid-item, #grid-item-3 {
     background-color: var(--olive-green);
     padding: 10px;
     border-radius: 10px;
@@ -188,8 +191,28 @@ hr {
     padding: 5px;
     font-weight: lighter;
 }
-/* Section 3: Card section with responsive img and captionn test */
 
+ul {
+    line-height: 20px;
+}
+
+/* Section 3: Card section with responsive img and captionn test */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill), minmax(200px, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > img {
+    max-width: 400px;
+}
 /* Footer */
 
 
