@@ -140,9 +140,15 @@ nav a:hover {
 }
 
 /* Section 1: Intro (h2, p) */
+#about > h2 {
+    font-size: 25px;
+    padding-top: 50px;
+    color: var(--midnight-blue);
+}
+
 h2 {
     font-size: 25px;
-    padding-top: 25px;
+    padding: 25px 0 10px 0;
     color: var(--midnight-blue);
 }
 
@@ -156,13 +162,36 @@ hr {
     border: 1px solid var(--champagne-gold);
 }
 
-
 /* Section 2: Grid layout for three boxes with text aligned left (h2 above grid: h3, p) */
+#offerings {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    color: var(--soft-white);
+}
 
+#grid-item-1, #grid-item-2, #grid-item-3 {
+    background-color: var(--olive-green);
+    padding: 10px;
+    border-radius: 10px;
+}
 
+#offerings h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--soft-white);
+    padding: 5px;
+}
+
+#offerings p {
+    color: var(--soft-white);
+    padding: 5px;
+    font-weight: lighter;
+}
 /* Section 3: Card section with responsive img and captionn test */
 
 /* Footer */
+
 
 /* Media Queries */
 /* Media query - Medium */
