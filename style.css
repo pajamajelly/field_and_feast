@@ -315,7 +315,7 @@ p > a {
 
 /* Media Queries */
 /* Media query - Medium min 600px */
-@media screen and (min-width: 500px) and (max-device-width: 900px) {
+@media screen and (min-width: 600px) {
 
 /* Body container */
    #container {
@@ -405,7 +405,7 @@ p > a {
 
 
 /* Media query - Large 900px */
-@media screen and (min-device-width: 900px) and (max-device-width: 1200px) {
+@media screen and (min-device-width: 900px) {
    /* Body container */
    #container {
     max-width: 1200px;
@@ -476,7 +476,7 @@ header > img {
 }
 }
 /* Media query - XL 1200px */
-@media screen and (min-width: 1200px) and (max-device-width: 1400px) {
+@media screen and (min-width: 1200px) {
     #container {
         max-width: 1400px;
    }
