@@ -323,16 +323,39 @@ p > a {
    }
 
 /* Header and Nav */
+
    header > img {
     width: 30%;
     margin: 0 auto;
     padding: 20px;
    }
 
+   header > h1 {
+    font-size: 60px;
+   }
+
+   nav ul {
+    margin: 0 200px;
+   }
+
+   main {
+    margin: 0 100px;
+   }
+
 /* Our Offerings */
+
+   #about {
+    margin: 0 100px;
+   }
+
+   .head-offerings {
+    padding-left: 100px;
+   }
+
    #offerings {
     display: flex;
     justify-content: flex-start;
+    margin: 0 100px;
    }
 
    #offerings h3 {
@@ -353,10 +376,16 @@ p > a {
    }
 
 /* Gallery cards */
+
+   #gallery {
+    padding: 10px 100px;
+   }
+
    #gallery-cards {
     display: grid;
     grid-template-columns: 25em 25em;
     grid-template-rows: 20em;
+    margin: 0 100px;
    }
 
    .card {
@@ -366,7 +395,7 @@ p > a {
 
     button {
     width: 95%;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 30px 10px 30px;
 }
 }
 
@@ -378,15 +407,23 @@ p > a {
     max-width: 1200px;
 }
 
+main {
+    margin: 0 200px;
+}
+
 /* Header and Nav */
 header > img {
-    width: 30%;
+    width: 20%;
     margin: 0 auto;
     padding: 20px;
    }
 
    header > h1 {
     font-size: 4em;
+   }
+
+   nav ul {
+    margin: 0 150px;
    }
 
 
@@ -445,6 +482,10 @@ header > img {
     width: 20%;
     margin: 0 auto;
     padding: 20px;
+   }
+
+   nav ul {
+    margin: 0 200px;
    }
 
    nav a:hover {
