@@ -190,7 +190,7 @@ hr {
     color: var(--midnight-blue);
 }
 
-#grid-col, #grid-row {
+#grid-col-1, #grid-col-2, #grid-row {
     background-color: var(--olive-green);
     padding: 10px;
     border-radius: 10px;
@@ -231,7 +231,7 @@ hr {
 
 .card {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     margin: 1em;
 }
 
@@ -342,14 +342,18 @@ p > a {
     margin: 0 100px;
    }
 
-/* Our Offerings */
-
    #about {
     margin: 0 100px;
    }
 
+   hr {
+    margin: 0 100px;
+   }
+
+/* Our Offerings */
+
    .head-offerings {
-    padding-left: 100px;
+    padding-left: 120px;
    }
 
    #offerings {
@@ -364,7 +368,7 @@ p > a {
         line-height: 1.5em;
    }
 
-   #grid-col {
+   #grid-col-1, #grid-col-2 {
         flex-direction: column;
         flex: 1;
         margin: 5px;
@@ -395,7 +399,7 @@ p > a {
 
     button {
     width: 95%;
-    margin: 10px 30px 10px 30px;
+    margin: 10px 70px;
 }
 }
 
@@ -439,7 +443,7 @@ header > img {
         line-height: 1.5em;
    }
 
-   #grid-col {
+   #grid-col-1, #grid-col-2 {
         flex-direction: column;
         flex: 1;
         margin: 5px;
