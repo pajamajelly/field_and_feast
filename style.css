@@ -63,6 +63,8 @@ table {
     --linen: #F8F4EC;
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
+    /* box shadow */
+    --box-shadow: #96969671;
     /* fonts */ 
     --playfair: 'Playfair Display', serif;
 }
@@ -75,26 +77,36 @@ table {
 }
 
 #mobile {
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
-    background-color: var(--linen);
+    background-color: var(--soft-white);
     font-family: var(--playfair);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "head"
+        "about"
+        "offerings"
+        "gallery"
+        "foot";
 }
 
 /* Header: h1 & Navbar */
 header {
+    grid-area: head;
     background-color: var(--midnight-blue);
     color: var(--soft-white);
 }
 
 header > img {
     width: 200px;
-    margin: 0 75px 0 125px;
+    margin: 0 60px 0 150px;
     padding: 20px;
 }
 
 header > h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -102,10 +114,10 @@ header > h1 {
 header > p {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 header > nav {
@@ -142,6 +154,7 @@ nav a:hover {
 
 /* Section 1: Intro (h2, p) */
 #about > h2 {
+    grid-area: about;
     font-size: 25px;
     padding-top: 50px;
     color: var(--midnight-blue);
@@ -149,7 +162,7 @@ nav a:hover {
 
 h2 {
     font-size: 25px;
-    padding: 25px 0 10px 0;
+    padding: 15px 0 10px 20px;
     color: var(--midnight-blue);
 }
 
@@ -158,21 +171,30 @@ p {
     color: var(--midnight-blue);
     font-weight: lighter;
     line-height: 1.25rem;
+    padding: 0 20px 20px 20px;
 }
 
 hr {
-    margin-top: 25px;
+    margin: 10px;
     border: 1px solid var(--champagne-gold);
 }
 
 /* Section 2: Grid layout for three boxes with text aligned left (h2 above grid: h3, p) */
 #offerings {
+    grid-area: offerings;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
     color: var(--soft-white);
     line-height: 20px;
+    padding: 10px;
+}
+
+#offerings > h2 {
+    font-size: 25px;
+    padding: 10px 0 10px 10px;
+    color: var(--midnight-blue);
 }
 
 #grid-item, #grid-item-3 {
@@ -198,38 +220,104 @@ ul {
     line-height: 20px;
 }
 
-/* Section 3: Card section with responsive img and captionn test */
+/* Section 3: Card section with responsive img and caption test */
 #gallery {
-    padding-bottom: 10px;
+    grid-area: gallery;
 }
 
 #gallery-cards {
+    max-width: 400px;
+    margin: 0.5em auto;
+
     display: grid;
-    grid-template-columns: repeat(auto-fill), minmax(200px, 1fr);
-    gap: 10px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
 }
 
 .card {
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 3px 3px var(--box-shadow);
+    background-color: var(--soft-white);
+    border-radius: 3px;
+
+    display: grid;
+    grid-template-rows: 1fr;
 }
 
-.card > img {
-    max-width: 400px;
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-caption {
-    border: 1px solid var(--dark-charcoal);
+figcaption {
+    text-align: center;
+    font-size: 12px;
     font-style: italic;
+    font-weight: lighter;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 400px;
+    height: 40px;
+    background-color: var(--olive-green);
+    color: var(--linen);
+    font-family: var(--playfair);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Footer */
 
+footer {
+    grid-area: foot;
+    background-color: var(--midnight-blue);
+    color: var(--linen);
+}
+
+address {
+    margin-top: 70px;
+}
+
+footer p {
+    color: var(--soft-white);
+}
+
+p > a {
+    color: var(--champagne-gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact, #socials {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 12px;
+    color: var(--soft-white);
+    line-height: 0.5em;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
 
 /* Media Queries */
-/* Media query - Medium */
-/* Media query - Large */
-/* Media query - XL */
+/* Media query - Medium 600px */
+/* Media query - Large 900px */
+/* Media query - XL 1200px */
 

@@ -88,7 +88,6 @@
 
         <!--Line break stylized-->
         <hr>
-
         <!--Section 3: Card section with responsive img and captionn test-->
 
         <!--Section 3.1: Intro (h2, p)-->
@@ -99,58 +98,75 @@
                 the story of our commitment to excellence.</p>
         </section>
 
-            <!--Section 3.2: Five cards encased with images and captions that are responsive-->
-            <!--small = 1 single column
+        <!--Section 3.2: Five cards encased with images and captions that are responsive-->
+        <!--small = 1 single column
             medium = 2 columns & 3 rows
             large = 3 columns & 2 rows
             xl = 1 single row 
         -->
         <section id="gallery-cards">
-            <!--Tomoatoes image-->
-            <article class="card">
+            <!--Tomatoes image-->
+            <figure class="card">
+                <source srcset="images/tomatoes-200w.jpg, images/tomatoes-300w.jpg 2x, images/tomatoes-600w.jpg 3x"
+                    type="image/jpeg">
                 <img src="images/tomatoes-200w.jpg" alt="An upclose shot of red tomatoes hanging from a tree">
-                <caption>Heirloom tomatoes at peak ripeness.</caption>
-            </article>
+                <figcaption>Heirloom tomatoes at peak ripeness.</figcaption>
+            </figure>
 
             <!--(olive-oil image)-->
-            <article class="card">
+            <figure class="card">
+                <source srcset="images/olive-oil-200w.jpg, images/olive-oil-300w.jpg 2x, images/olive-oil-600w.jpg 3x"
+                    type="image/jpeg">
                 <img src="images/olive-oil-200w.jpg"
                     alt="A wood bowl of green stuffed olives with olive oil pouring on top and sitting on wooden cutting board">
-                <caption>Drizzling golden olive oil over fresh harvest.</caption>
-            </article>
+                <figcaption>Drizzling golden olive oil over fresh harvest.</figcaption>
+            </figure>
 
             <!--(table-setting image)-->
-            <article class="card">
+            <figure class="card">
+                <source
+                    srcset="images/table-setting-200w.jpg, images/table-setting-300w.jpg 2x, images/table-setting-600w.jpg 3x"
+                    type="image/jpeg">
                 <img src="images/table-setting-200w.jpg"
                     alt="A table setting with a candle in the middle of the table with green leaves surrounding the candle">
-                <caption>Elegant tablescape under the evening sky</caption>
-            </article>
+                <figcaption>Elegant tablescape under the evening sky</figcaption>
+            </figure>
 
             <!--(chef-plating image)-->
-            <article class="card">
+            <figure class="card">
+                <source
+                    srcset="images/chef-plating-200w.jpg, images/chef-plating-300w.jpg 2x, images/chef-plating-600w.jpg 3x"
+                    type="image/jpeg">
                 <img src="images/chef-plating-200w.jpg" alt="A chef plating a sandwich dish in a professional kitchen">
-                <caption>Artful plating with seasonal ingredients.</caption>
-            </article>
+                <figcaption>Artful plating with seasonal ingredients.</figcaption>
+            </figure>
 
             <!--(basket image)-->
-            <article class="card">
-                <img src="images/basket-600w.jpg"
+            <figure class="card">
+                <source srcset="images/basket-200w.jpg, images/basket-300w.jpg 2x, images/basket-600w.jpg 3x"
+                    type="image/jpeg">
+                <img src="images/basket-200w.jpg"
                     alt="A few wicker baskets outside in a farmer's market setting with bright red fruits inside">
-                <caption>Our monthly basket, curated with care.</caption>
-            </article>
+                <figcaption>Our monthly basket, curated with care.</figcaption>
+            </figure>
+            <button>View Our Full Gallery</button>
         </section>
-
-        <button>View Our Full Gallery</button>
     </main>
+
+    <hr>
 
     <footer>
         <!--Address, phone number and email with link-->
-        <address>123 Estate Lane, Wine Country, CA</address>
-        <p>(555) 123-4567</p>
-        <p>hello@fieldandfeast.com</p>
+        <div id="contact">
+            <address>123 Estate Lane, Wine Country, CA</address>
+            <p>(555) 123-4567</p>
+            <p><a href="mailto:hello@fieldandfeast.com" target="_blank"> hello@fieldandfeast.com</a></p>
+        </div>
         <!--Social media-->
-        <p>Instagram</p>
-        <p>Facebook</p>
+        <div id="socials">
+            <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+        </div>
     </footer>
 </body>
 
