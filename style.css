@@ -76,14 +76,14 @@ table {
     box-sizing: border-box;
 }
 
-#mobile {
+#container {
     max-width: 500px;
     margin: 0 auto;
     background-color: var(--soft-white);
     font-family: var(--playfair);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas: 
         "head"
         "about"
@@ -197,7 +197,7 @@ hr {
     color: var(--midnight-blue);
 }
 
-#grid-item, #grid-item-3 {
+#grid-col, #grid-row {
     background-color: var(--olive-green);
     padding: 10px;
     border-radius: 10px;
@@ -207,7 +207,7 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color: var(--soft-white);
-    padding: 5px;
+    padding: 2px;
 }
 
 #offerings p {
@@ -216,8 +216,10 @@ hr {
     font-weight: lighter;
 }
 
-ul {
-    line-height: 20px;
+#grid-row ul {
+    font-size: 14px;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 /* Section 3: Card section with responsive img and caption test */
@@ -314,10 +316,61 @@ p > a {
     justify-content: center;
 }
 
-
-
 /* Media Queries */
 /* Media query - Medium 600px */
+
+@media screen and (min-width: 600px) and (max-device-width: 900px) {
+
+/* Body container */
+   #container {
+        max-width: 600px;
+   }
+
+/* Header and Nav */
+   header > img {
+    margin: 0 60px 0 200px;
+    padding: 20px;
+   }
+
+/* Our Offerings */
+   #offerings {
+    display: flex;
+    justify-content: flex-start;
+   }
+
+   #offerings h3 {
+        font-size: 30px;
+        flex-wrap: wrap;
+        line-height: 1.5em;
+   }
+
+   #grid-col {
+        flex-direction: column;
+        flex: 1;
+        margin: 5px;
+   }
+
+   #grid-row {
+        flex: 0 1 100%;
+        margin: 5px;
+   }
+
+/* Gallery cards */
+   #gallery-cards {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+
+}
 /* Media query - Large 900px */
+@media screen and (min-device-width: 900px) and (max-device-width: 1200px) {
+   
+
+}
 /* Media query - XL 1200px */
+@media screen and (min-width: 1200px) and (max-device-width: 1400px) {
+    
+
+}
 
