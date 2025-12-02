@@ -273,43 +273,31 @@ footer {
     grid-area: foot;
     background-color: var(--midnight-blue);
     color: var(--linen);
+    height: 200px;
 }
 
-address {
-    margin-top: 70px;
-}
-
-footer p {
-    color: var(--soft-white);
-}
-
-p > a {
-    color: var(--champagne-gold);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact, #socials {
+#contact {
     text-align: center;
     margin: 1em auto;
     font-size: 12px;
     color: var(--soft-white);
-    line-height: 0.5em;
+    line-height: 2em;
 
     display: grid;
     grid-template-columns: 1fr;
-}
-
-#contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 5px;
+}
+
+footer a {
+    color: var(--champagne-gold);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
